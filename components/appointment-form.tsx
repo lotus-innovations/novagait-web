@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { locations, providers, services } from "@/content/site";
 
 type FieldErrors = Partial<Record<FieldName, string>>;
@@ -31,6 +31,16 @@ export function AppointmentForm() {
   >({ kind: "idle" });
   const summaryRef = useRef<HTMLDivElement>(null);
   const successRef = useRef<HTMLHeadingElement>(null);
+  const errorCount = Object.keys(errors).length;
+
+  // Focus management runs after commit so the target node exists: the
+  // error summary on failed validation, the confirmation heading on success.
+  useEffect(() => {
+    if (errorCount > 0) summaryRef.current?.focus();
+  }, [errorCount, errors]);
+  useEffect(() => {
+    if (status.kind === "success") successRef.current?.focus();
+  }, [status.kind]);
 
   function validate(data: FormData): FieldErrors {
     const next: FieldErrors = {};
@@ -71,8 +81,6 @@ export function AppointmentForm() {
     setErrors(found);
     if (Object.keys(found).length > 0) {
       setStatus({ kind: "idle" });
-      // Move focus to the error summary so the mistake list is announced.
-      requestAnimationFrame(() => summaryRef.current?.focus());
       return;
     }
     setStatus({ kind: "submitting" });
@@ -88,7 +96,6 @@ export function AppointmentForm() {
         return;
       }
       setStatus({ kind: "success", reference: json.reference });
-      requestAnimationFrame(() => successRef.current?.focus());
     } catch {
       setStatus({ kind: "failed" });
     }
