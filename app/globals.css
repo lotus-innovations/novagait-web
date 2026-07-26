@@ -115,6 +115,47 @@ body {
   }
 }
 
+/* Stride motif: the hero gait line draws itself once on load.
+   Gated on prefers-reduced-motion; the global kill switch above also applies. */
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes stride-draw {
+    from {
+      stroke-dashoffset: 900;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .stride-path .stride-line {
+    stroke-dasharray: 900;
+    animation: stride-draw 1.4s ease-out both;
+  }
+
+  @keyframes stride-fade {
+    from {
+      opacity: 0;
+    }
+  }
+
+  .stride-path .stride-mark {
+    animation: stride-fade 0.5s ease-out both;
+  }
+
+  .stride-path .stride-mark:nth-of-type(2) {
+    animation-delay: 0.25s;
+  }
+  .stride-path .stride-mark:nth-of-type(3) {
+    animation-delay: 0.5s;
+  }
+  .stride-path .stride-mark:nth-of-type(4) {
+    animation-delay: 0.75s;
+  }
+  .stride-path .stride-mark:nth-of-type(5) {
+    animation-delay: 1s;
+  }
+}
+
 /* Skip link: hidden until focused. */
 .skip-link {
   position: absolute;
