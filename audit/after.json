@@ -1,0 +1,42 @@
+{
+  "audit": {
+    "target": "http://localhost:3100",
+    "date": "2026-07-26T22:40:18.222Z",
+    "scope": {
+      "pages": [
+        "/",
+        "/services",
+        "/providers",
+        "/locations",
+        "/contact",
+        "/accessibility-demo",
+        "/accessibility-demo/audit",
+        "/accessibility-demo/vpat"
+      ],
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ]
+    },
+    "engines": {
+      "axe-core": "4.12.1",
+      "runner": "a11y-audit/run-axe.mjs v1"
+    },
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa",
+      "best-practice"
+    ],
+    "exclusions": [
+      "iframe"
+    ],
+    "note": "Automated Stage A engines only. Partial coverage: roughly one third of WCAG is machine-checkable. No compliance is certified; findings are reported within tested scope only.",
+    "variant": "after",
+    "stageB": "Manual pass on the after-site: keyboard-only walk of every page (focus visible at each stop, logical order, skip link works, no traps), form error/success announcement flow verified with focus management, reduced-motion honored (hero animation inert), sticky-header obscuring not applicable (header not sticky). No violations found within tested scope."
+  },
+  "findings": []
+}

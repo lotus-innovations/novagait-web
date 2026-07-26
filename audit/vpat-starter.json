@@ -1,0 +1,451 @@
+{
+  "meta": {
+    "product": "Novagait Physical Therapy demo website (after-variant)",
+    "standard": "WCAG 2.2 Levels A and AA",
+    "date": "2026-07-26T22:40:18.222Z",
+    "basis": "Generated from the after-audit findings ledger (axe-core Stage A across 6 pages x 3 viewports, tags incl. best-practice) plus the Stage B manual pass. DRAFT input for an ACR; not an ACR itself.",
+    "note": "Suggestions are per-criterion starting points. Absence of findings is evidence within tested scope only; it never certifies compliance."
+  },
+  "rows": [
+    {
+      "sc": "1.1.1",
+      "name": "Non-text Content",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.2.1",
+      "name": "Audio-only and Video-only (Prerecorded)",
+      "level": "A",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No audio or video content anywhere on the site."
+    },
+    {
+      "sc": "1.2.2",
+      "name": "Captions (Prerecorded)",
+      "level": "A",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No prerecorded media."
+    },
+    {
+      "sc": "1.2.3",
+      "name": "Audio Description or Media Alternative (Prerecorded)",
+      "level": "A",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No prerecorded media."
+    },
+    {
+      "sc": "1.2.4",
+      "name": "Captions (Live)",
+      "level": "AA",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No live media."
+    },
+    {
+      "sc": "1.2.5",
+      "name": "Audio Description (Prerecorded)",
+      "level": "AA",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No prerecorded media."
+    },
+    {
+      "sc": "1.3.1",
+      "name": "Info and Relationships",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.3.2",
+      "name": "Meaningful Sequence",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.3.3",
+      "name": "Sensory Characteristics",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.3.4",
+      "name": "Orientation",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.3.5",
+      "name": "Identify Input Purpose",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.4.1",
+      "name": "Use of Color",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.4.2",
+      "name": "Audio Control",
+      "level": "A",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No auto-playing audio."
+    },
+    {
+      "sc": "1.4.3",
+      "name": "Contrast (Minimum)",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.4.4",
+      "name": "Resize Text",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.4.5",
+      "name": "Images of Text",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.4.10",
+      "name": "Reflow",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.4.11",
+      "name": "Non-text Contrast",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.4.12",
+      "name": "Text Spacing",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "1.4.13",
+      "name": "Content on Hover or Focus",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.1.1",
+      "name": "Keyboard",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.1.2",
+      "name": "No Keyboard Trap",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.1.4",
+      "name": "Character Key Shortcuts",
+      "level": "A",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No character-key shortcuts are implemented."
+    },
+    {
+      "sc": "2.2.1",
+      "name": "Timing Adjustable",
+      "level": "A",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No time limits on any interaction."
+    },
+    {
+      "sc": "2.2.2",
+      "name": "Pause, Stop, Hide",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.3.1",
+      "name": "Three Flashes or Below Threshold",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.4.1",
+      "name": "Bypass Blocks",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.4.2",
+      "name": "Page Titled",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.4.3",
+      "name": "Focus Order",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.4.4",
+      "name": "Link Purpose (In Context)",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.4.5",
+      "name": "Multiple Ways",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.4.6",
+      "name": "Headings and Labels",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.4.7",
+      "name": "Focus Visible",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.4.11",
+      "name": "Focus Not Obscured (Minimum)",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.5.1",
+      "name": "Pointer Gestures",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.5.2",
+      "name": "Pointer Cancellation",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.5.3",
+      "name": "Label in Name",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.5.4",
+      "name": "Motion Actuation",
+      "level": "A",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No motion-actuated functionality."
+    },
+    {
+      "sc": "2.5.7",
+      "name": "Dragging Movements",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "2.5.8",
+      "name": "Target Size (Minimum)",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.1.1",
+      "name": "Language of Page",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.1.2",
+      "name": "Language of Parts",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.2.1",
+      "name": "On Focus",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.2.2",
+      "name": "On Input",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.2.3",
+      "name": "Consistent Navigation",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.2.4",
+      "name": "Consistent Identification",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.2.6",
+      "name": "Consistent Help",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.3.1",
+      "name": "Error Identification",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.3.2",
+      "name": "Labels or Instructions",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.3.3",
+      "name": "Error Suggestion",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.3.4",
+      "name": "Error Prevention (Legal, Financial, Data)",
+      "level": "AA",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No legal, financial, or data-modifying transactions (demo booking stores nothing)."
+    },
+    {
+      "sc": "3.3.7",
+      "name": "Redundant Entry",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "3.3.8",
+      "name": "Accessible Authentication (Minimum)",
+      "level": "AA",
+      "suggestion": "Not Applicable",
+      "linkedFindings": [],
+      "remarks": "No authentication on public surfaces (the demo has no login)."
+    },
+    {
+      "sc": "4.1.2",
+      "name": "Name, Role, Value",
+      "level": "A",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    },
+    {
+      "sc": "4.1.3",
+      "name": "Status Messages",
+      "level": "AA",
+      "suggestion": "Supports",
+      "linkedFindings": [],
+      "remarks": ""
+    }
+  ]
+}

@@ -56,12 +56,15 @@ export function BeforeForm() {
         placeholder="Name"
         className={`${inputClass} ${border("name")}`}
       />
-      {/* V12: re-asking for information just provided. */}
+      {/* V12: re-asking for information just provided. The "label" is a
+          plain <p> that is not programmatically associated and there is no
+          placeholder, so these two fields have no accessible name at all
+          (axe: label), attributed to V12 in the reconciliation. */}
+      <p className="mt-4 text-sm text-[#5a6478]">Confirm your name</p>
       <input
         name="nameConfirm"
         type="text"
-        placeholder="Confirm your name"
-        className={`${inputClass} ${border("nameConfirm")}`}
+        className={`${inputClass.replace("mt-4", "mt-1")} ${border("nameConfirm")}`}
       />
       <input
         name="phone"
@@ -70,11 +73,11 @@ export function BeforeForm() {
         className={`${inputClass} ${border("phone")}`}
       />
       {/* V12: and again. */}
+      <p className="mt-4 text-sm text-[#5a6478]">Re-enter phone</p>
       <input
         name="phoneConfirm"
         type="tel"
-        placeholder="Re-enter phone"
-        className={`${inputClass} ${border("phoneConfirm")}`}
+        className={`${inputClass.replace("mt-4", "mt-1")} ${border("phoneConfirm")}`}
       />
       <select
         name="service"

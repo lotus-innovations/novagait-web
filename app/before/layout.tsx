@@ -82,9 +82,9 @@ export default function BeforeLayout({
 
       <footer className="border-t border-[#d8dce4] bg-[#f4f6f9]">
         <div className="mx-auto max-w-6xl px-6 py-10">
-          {/* V9: touch targets far under 24px, icon-only links with no
-              accessible names. */}
-          <div className="flex gap-2">
+          {/* V9: touch targets far under 24px (4px gaps defeat the 24px spacing
+              exception), icon-only links with no accessible names. */}
+          <div className="flex gap-1">
             {["facebook", "x", "instagram", "youtube"].map((network) => (
               // eslint-disable-next-line @next/next/no-html-link-for-pages
               <a

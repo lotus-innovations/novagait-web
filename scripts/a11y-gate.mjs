@@ -32,7 +32,24 @@ const PORT = 4319;
 const BASE = `http://localhost:${PORT}`;
 
 // After-site surfaces only. /before/* is excluded by design (header note).
-const PAGES = ["/", "/services", "/providers", "/locations", "/contact"];
+const PAGES = [
+  "/",
+  "/services",
+  "/providers",
+  "/locations",
+  "/contact",
+  "/accessibility-demo",
+  "/accessibility-demo/audit",
+  "/accessibility-demo/vpat",
+];
+
+// The exhibit page embeds BOTH site variants in iframes. The before-frame
+// is the documented broken variant (its violations are the point of the
+// demo, ledgered separately); the after-frame's pages are each gated above
+// as standalone entries. Scanning them again through the iframe would
+// double-count landmarks across document boundaries. Exclude the frames,
+// gate the exhibit chrome itself.
+const EXCLUDE_SELECTOR = "iframe";
 
 const GATE_TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"];
 
@@ -71,10 +88,20 @@ async function main() {
       });
       const page = await context.newPage();
       for (const pagePath of PAGES) {
-        await page.goto(`${BASE}${pagePath}`, { waitUntil: "networkidle" });
-        await page.waitForTimeout(1000);
+        try {
+          await page.goto(`${BASE}${pagePath}`, {
+            waitUntil: "networkidle",
+            timeout: 20000,
+          });
+        } catch {
+          // Iframe-heavy pages may never reach networkidle; "load" + settle
+          // is sufficient for axe (parity with the skill runner).
+          await page.goto(`${BASE}${pagePath}`, { waitUntil: "load" });
+        }
+        await page.waitForTimeout(1500);
         const results = await new AxeBuilder({ page })
           .withTags(GATE_TAGS)
+          .exclude(EXCLUDE_SELECTOR)
           .analyze();
         if (results.violations.length > 0) {
           failures += results.violations.length;

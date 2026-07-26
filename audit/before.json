@@ -1,0 +1,1857 @@
+{
+  "audit": {
+    "target": "http://localhost:3100",
+    "date": "2026-07-26T22:26:11.714Z",
+    "scope": {
+      "pages": [
+        "/before",
+        "/before/services",
+        "/before/providers",
+        "/before/locations",
+        "/before/contact"
+      ],
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ]
+    },
+    "engines": {
+      "axe-core": "4.12.1",
+      "runner": "a11y-audit/run-axe.mjs v1"
+    },
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa",
+      "best-practice"
+    ],
+    "note": "Automated Stage A engines only. Partial coverage: roughly one third of WCAG is machine-checkable. No compliance is certified; findings are reported within tested scope only.",
+    "variant": "before",
+    "stageB": "Manual-judgment pass performed per wcag22-manual-checklist; manual findings carry reproduction evidence.",
+    "reconciliation": {
+      "seededIds": [
+        "V1",
+        "V10",
+        "V11",
+        "V12",
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "V6",
+        "V7",
+        "V8",
+        "V9"
+      ],
+      "axeDetectedIds": [
+        "V1",
+        "V12",
+        "V3",
+        "V5",
+        "V6",
+        "V7",
+        "V8",
+        "V9"
+      ],
+      "manualOnlyIds": [
+        "V10",
+        "V11",
+        "V2",
+        "V4"
+      ],
+      "axeFindingCount": 75,
+      "manualFindingCount": 9
+    }
+  },
+  "findings": [
+    {
+      "id": "axe-aria-dialog-name-1",
+      "rule": "aria-dialog-name",
+      "sc": null,
+      "scAll": [],
+      "wcagLevel": "best-practice",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".max-w-md",
+      "evidence": "<div role=\"dialog\" class=\"w-full max-w-md rounded-lg bg-white p-8\">",
+      "source": "axe",
+      "recommendation": "ARIA dialog and alertdialog nodes should have an accessible name. https://dequeuniversity.com/rules/axe/4.12/aria-dialog-name?application=playwright",
+      "effort": "S",
+      "seededId": "V7"
+    },
+    {
+      "id": "axe-button-name-2",
+      "rule": "button-name",
+      "sc": "4.1.2",
+      "scAll": [
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Blocker",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".left-3",
+      "evidence": "<button type=\"button\" class=\"absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-2\"><svg viewBox=\"0 0 20 20\" class=\"h-5 w-5\" focusable=\"false\"><path d=\"M12 4 L6 10 L12 16\" fill=\"none\" stroke=\"#1a2233\" stroke-width=\"2.5\"></path></svg></button>",
+      "source": "axe",
+      "recommendation": "Buttons must have discernible text. https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright",
+      "effort": "S",
+      "seededId": "V8"
+    },
+    {
+      "id": "axe-button-name-3",
+      "rule": "button-name",
+      "sc": "4.1.2",
+      "scAll": [
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Blocker",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".right-3",
+      "evidence": "<button type=\"button\" class=\"absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-white/80 p-2\"><svg viewBox=\"0 0 20 20\" class=\"h-5 w-5\" focusable=\"false\"><path d=\"M8 4 L14 10 L8 16\" fill=\"none\" stroke=\"#1a2233\" stroke-width=\"2.5\"></path></svg></button>",
+      "source": "axe",
+      "recommendation": "Buttons must have discernible text. https://dequeuniversity.com/rules/axe/4.12/button-name?application=playwright",
+      "effort": "S",
+      "seededId": "V8"
+    },
+    {
+      "id": "axe-color-contrast-4",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".shrink-0.py-16.w-full:nth-child(2) > .mx-auto.max-w-6xl > .text-4xl.font-extrabold.tracking-tight",
+      "evidence": "<p class=\"text-4xl font-extrabold tracking-tight text-[#b6bcc9]\">Now offering weekend hours</p>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-5",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".shrink-0.py-16.w-full:nth-child(2) > .mx-auto.max-w-6xl > .mt-3.max-w-xl.text-\\[\\#c3c9d4\\]",
+      "evidence": "<p class=\"mt-3 max-w-xl text-lg text-[#c3c9d4]\">Saturday appointments at our Crescent Park clinic.</p>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-6",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"services\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/services\">Services</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-7",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"providers\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/providers\">Providers</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-8",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"locations\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/locations\">Locations</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-9",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"contact\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/contact\">Contact</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-heading-order-10",
+      "rule": "heading-order",
+      "sc": null,
+      "scAll": [],
+      "wcagLevel": "best-practice",
+      "severity": "Moderate",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "section:nth-child(4) > .mx-auto.max-w-6xl.px-6 > .text-2xl",
+      "evidence": "<h4 class=\"text-2xl font-bold text-[#1a2233]\">Our services</h4>",
+      "source": "axe",
+      "recommendation": "Heading levels should only increase by one. https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright",
+      "effort": "M",
+      "seededId": "V6"
+    },
+    {
+      "id": "axe-link-name-11",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-12",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-13",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-14",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-15",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-16",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-17",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-18",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-color-contrast-19",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"services\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/services\">Services</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-20",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"providers\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/providers\">Providers</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-21",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"locations\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/locations\">Locations</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-22",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"contact\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/contact\">Contact</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-heading-order-23",
+      "rule": "heading-order",
+      "sc": null,
+      "scAll": [],
+      "wcagLevel": "best-practice",
+      "severity": "Moderate",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".cursor-pointer.rounded-lg.border:nth-child(1) > .text-lg",
+      "evidence": "<h4 class=\"text-lg font-bold text-[#1a2233]\">Orthopedic rehabilitation</h4>",
+      "source": "axe",
+      "recommendation": "Heading levels should only increase by one. https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright",
+      "effort": "M",
+      "seededId": "V6"
+    },
+    {
+      "id": "axe-link-name-24",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-25",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-26",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-27",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-28",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-29",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-30",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-31",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/services",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-color-contrast-32",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"services\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/services\">Services</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-33",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"providers\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/providers\">Providers</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-34",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"locations\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/locations\">Locations</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-35",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"contact\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/contact\">Contact</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-heading-order-36",
+      "rule": "heading-order",
+      "sc": null,
+      "scAll": [],
+      "wcagLevel": "best-practice",
+      "severity": "Moderate",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".rounded-lg.border.p-6:nth-child(1) > h4",
+      "evidence": "<h4 class=\"mt-4 text-lg font-bold text-[#1a2233]\">Maren Oduya<!-- -->, <!-- -->PT, DPT, OCS</h4>",
+      "source": "axe",
+      "recommendation": "Heading levels should only increase by one. https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright",
+      "effort": "M",
+      "seededId": "V6"
+    },
+    {
+      "id": "axe-image-alt-37",
+      "rule": "image-alt",
+      "sc": "1.1.1",
+      "scAll": [
+        "1.1.1"
+      ],
+      "wcagLevel": "A",
+      "severity": "Blocker",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".rounded-lg.border.p-6:nth-child(1) > img[src$=\"provider-1.svg\"]",
+      "evidence": "<img src=\"/before/provider-1.svg\" class=\"h-32 w-full rounded-md object-cover\">",
+      "source": "axe",
+      "recommendation": "Images must have alternative text. https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright",
+      "effort": "S",
+      "seededId": "V5"
+    },
+    {
+      "id": "axe-image-alt-38",
+      "rule": "image-alt",
+      "sc": "1.1.1",
+      "scAll": [
+        "1.1.1"
+      ],
+      "wcagLevel": "A",
+      "severity": "Blocker",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".rounded-lg.border.p-6:nth-child(2) > img[src$=\"provider-2.svg\"]",
+      "evidence": "<img src=\"/before/provider-2.svg\" class=\"h-32 w-full rounded-md object-cover\">",
+      "source": "axe",
+      "recommendation": "Images must have alternative text. https://dequeuniversity.com/rules/axe/4.12/image-alt?application=playwright",
+      "effort": "S",
+      "seededId": "V5"
+    },
+    {
+      "id": "axe-link-name-39",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-40",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-41",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-42",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-43",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-44",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-45",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-46",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/providers",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-color-contrast-47",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"services\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/services\">Services</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-48",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"providers\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/providers\">Providers</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-49",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"locations\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/locations\">Locations</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-50",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"contact\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/contact\">Contact</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-heading-order-51",
+      "rule": "heading-order",
+      "sc": null,
+      "scAll": [],
+      "wcagLevel": "best-practice",
+      "severity": "Moderate",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "#crescent-park > h4",
+      "evidence": "<h4 class=\"text-2xl font-bold text-[#1a2233]\">Crescent Park</h4>",
+      "source": "axe",
+      "recommendation": "Heading levels should only increase by one. https://dequeuniversity.com/rules/axe/4.12/heading-order?application=playwright",
+      "effort": "M",
+      "seededId": "V6"
+    },
+    {
+      "id": "axe-link-name-52",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-53",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-54",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-55",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-56",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-57",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-58",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-59",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/locations",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-color-contrast-60",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"services\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/services\">Services</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-61",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"providers\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/providers\">Providers</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-62",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"locations\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/locations\">Locations</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-color-contrast-63",
+      "rule": "color-contrast",
+      "sc": "1.4.3",
+      "scAll": [
+        "1.4.3"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": ".text-\\[\\#b6bcc9\\].no-underline[href$=\"contact\"]",
+      "evidence": "<a class=\"text-[#b6bcc9] no-underline\" href=\"/before/contact\">Contact</a>",
+      "source": "axe",
+      "recommendation": "Elements must meet minimum color contrast ratio thresholds. https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=playwright",
+      "effort": "S",
+      "seededId": "V3"
+    },
+    {
+      "id": "axe-label-64",
+      "rule": "label",
+      "sc": "4.1.2",
+      "scAll": [
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Blocker",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "input[name=\"nameConfirm\"]",
+      "evidence": "<input type=\"text\" class=\"mt-1 block w-full rounded-md border px-3 py-2 text-[#1a2233] border-[#d8dce4]\" name=\"nameConfirm\">",
+      "source": "axe",
+      "recommendation": "Form elements must have labels. https://dequeuniversity.com/rules/axe/4.12/label?application=playwright",
+      "effort": "S",
+      "seededId": "V12"
+    },
+    {
+      "id": "axe-label-65",
+      "rule": "label",
+      "sc": "4.1.2",
+      "scAll": [
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Blocker",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "input[name=\"phoneConfirm\"]",
+      "evidence": "<input type=\"tel\" class=\"mt-1 block w-full rounded-md border px-3 py-2 text-[#1a2233] border-[#d8dce4]\" name=\"phoneConfirm\">",
+      "source": "axe",
+      "recommendation": "Form elements must have labels. https://dequeuniversity.com/rules/axe/4.12/label?application=playwright",
+      "effort": "S",
+      "seededId": "V12"
+    },
+    {
+      "id": "axe-link-name-66",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-67",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-68",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-link-name-69",
+      "rule": "link-name",
+      "sc": "2.4.4",
+      "scAll": [
+        "2.4.4",
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "Links must have discernible text. https://dequeuniversity.com/rules/axe/4.12/link-name?application=playwright",
+      "effort": "S",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-select-name-70",
+      "rule": "select-name",
+      "sc": "4.1.2",
+      "scAll": [
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Blocker",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "select[name=\"service\"]",
+      "evidence": "<select name=\"service\" class=\"mt-4 block w-full rounded-md border px-3 py-2 text-[#1a2233] border-[#d8dce4]\">",
+      "source": "axe",
+      "recommendation": "Select element must have an accessible name. https://dequeuniversity.com/rules/axe/4.12/select-name?application=playwright",
+      "effort": "S",
+      "seededId": "V1"
+    },
+    {
+      "id": "axe-select-name-71",
+      "rule": "select-name",
+      "sc": "4.1.2",
+      "scAll": [
+        "4.1.2"
+      ],
+      "wcagLevel": "A",
+      "severity": "Blocker",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "select[name=\"location\"]",
+      "evidence": "<select name=\"location\" class=\"mt-4 block w-full rounded-md border px-3 py-2 text-[#1a2233] border-[#d8dce4]\">",
+      "source": "axe",
+      "recommendation": "Select element must have an accessible name. https://dequeuniversity.com/rules/axe/4.12/select-name?application=playwright",
+      "effort": "S",
+      "seededId": "V1"
+    },
+    {
+      "id": "axe-target-size-72",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"facebook\"]",
+      "evidence": "<a href=\"https://example.com/facebook\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-73",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href=\"https://example.com/x\"]",
+      "evidence": "<a href=\"https://example.com/x\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-74",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"instagram\"]",
+      "evidence": "<a href=\"https://example.com/instagram\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "axe-target-size-75",
+      "rule": "target-size",
+      "sc": "2.5.8",
+      "scAll": [
+        "2.5.8"
+      ],
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "viewports": [
+        "desktop",
+        "mobile",
+        "zoom400"
+      ],
+      "selector": "a[href$=\"youtube\"]",
+      "evidence": "<a href=\"https://example.com/youtube\" class=\"block h-4 w-4\"><svg viewBox=\"0 0 16 16\" class=\"h-4 w-4\" focusable=\"false\"><rect width=\"16\" height=\"16\" rx=\"3\" fill=\"#5a6478\" aria-hidden=\"true\"></rect></svg></a>",
+      "source": "axe",
+      "recommendation": "All touch targets must be 24px large, or leave sufficient space. https://dequeuniversity.com/rules/axe/4.12/target-size?application=playwright",
+      "effort": "M",
+      "seededId": "V9"
+    },
+    {
+      "id": "manual-V1b",
+      "seededId": "V1",
+      "rule": "placeholder-only-labels",
+      "sc": "3.3.2",
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "selector": "form input[placeholder]",
+      "evidence": "Text inputs are labeled only by placeholder (e.g. <input name=\"phone\" placeholder=\"Phone\">). Automated label checks PASS these because the placeholder feeds accessible-name computation; the hint still disappears on entry and is not a label. Verified by inspection of before-form.tsx.",
+      "source": "manual",
+      "recommendation": "Add visible <label> elements associated via htmlFor/id; keep hints in aria-describedby.",
+      "effort": "S"
+    },
+    {
+      "id": "manual-V2",
+      "seededId": "V2",
+      "rule": "clickable-div-no-keyboard",
+      "sc": "2.1.1",
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/services",
+      "selector": "div.cursor-pointer[onClick]",
+      "evidence": "Service cards are <div onClick> with no role, tabindex, or keydown handler (before-service-cards.tsx). Reproduction: Tab through the page; the six cards are never focusable and cannot be activated by keyboard.",
+      "source": "manual",
+      "recommendation": "Make the affordance a real link or button.",
+      "effort": "S"
+    },
+    {
+      "id": "manual-V4",
+      "seededId": "V4",
+      "rule": "focus-visible-removed",
+      "sc": "2.4.7",
+      "wcagLevel": "AA",
+      "severity": "Serious",
+      "page": "/before",
+      "selector": ".before-scope *:focus",
+      "evidence": "before.css sets outline: none on every focused element in the variant with no replacement. Reproduction: Tab through any /before page; no focus indicator ever appears.",
+      "source": "manual",
+      "recommendation": "Provide a visible high-contrast focus indicator; never remove outlines without a replacement.",
+      "effort": "S"
+    },
+    {
+      "id": "manual-V5b",
+      "seededId": "V5",
+      "rule": "junk-alt-text",
+      "sc": "1.1.1",
+      "wcagLevel": "A",
+      "severity": "Moderate",
+      "page": "/before/providers",
+      "selector": "img[alt=\"IMG_4821.JPG\"]",
+      "evidence": "Third provider image carries alt=\"IMG_4821.JPG\". Automated checks pass it (alt is present); a screen reader reads a camera filename.",
+      "source": "manual",
+      "recommendation": "Describe meaningful images or mark decorative ones with empty alt.",
+      "effort": "S"
+    },
+    {
+      "id": "manual-V7b",
+      "seededId": "V7",
+      "rule": "keyboard-trap",
+      "sc": "2.1.2",
+      "wcagLevel": "A",
+      "severity": "Blocker",
+      "page": "/before",
+      "selector": "[role=\"dialog\"]",
+      "evidence": "Playwright verification 2026-07-26: with focus inside the newsletter popup, a dispatched Tab keydown has defaultPrevented=true (swallowed); Escape leaves the dialog open; the only close control is a <span onClick> (mouse-only). Keyboard users cannot leave the dialog.",
+      "source": "manual",
+      "recommendation": "Contain focus properly (wrap, not swallow), close on Escape, make the close control a real button, restore focus on close.",
+      "effort": "M"
+    },
+    {
+      "id": "manual-V8b",
+      "seededId": "V8",
+      "rule": "autoplay-ignores-reduced-motion",
+      "sc": "2.2.2",
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before",
+      "selector": ".before-carousel-track",
+      "evidence": "Carousel auto-advances on an infinite CSS animation with !important that overrides the global prefers-reduced-motion kill switch (before.css); there is no pause/stop/hide control.",
+      "source": "manual",
+      "recommendation": "Provide pause/stop/hide; honor prefers-reduced-motion; avoid autoplay.",
+      "effort": "M"
+    },
+    {
+      "id": "manual-V10",
+      "seededId": "V10",
+      "rule": "color-only-error-indication",
+      "sc": "3.3.1",
+      "wcagLevel": "A",
+      "severity": "Serious",
+      "page": "/before/contact",
+      "selector": "form .border-\\[\\#dc2626\\]",
+      "evidence": "Submitting the empty form turns invalid field borders red (border-[#dc2626]) with no error text, no aria-invalid, no focus move, and no announcement (before-form.tsx onSubmit). Screen reader output: silence.",
+      "source": "manual",
+      "recommendation": "Identify errors in text, associate them to fields, and announce them (error summary + aria-describedby).",
+      "effort": "M"
+    },
+    {
+      "id": "manual-V11",
+      "seededId": "V11",
+      "rule": "focus-obscured-sticky-header",
+      "sc": "2.4.11",
+      "wcagLevel": "AA",
+      "severity": "Moderate",
+      "page": "/before/locations",
+      "selector": "header.sticky",
+      "evidence": "The before-header is position:sticky top-0 and no scroll-padding/scroll-margin exists anywhere in the scope. Reproduction: Shift+Tab upward through the locations page; focused links scroll underneath the header and become invisible while focused.",
+      "source": "manual",
+      "recommendation": "Reserve the header height with scroll-padding-top, or un-stick the header.",
+      "effort": "S"
+    },
+    {
+      "id": "manual-V12b",
+      "seededId": "V12",
+      "rule": "redundant-entry",
+      "sc": "3.3.7",
+      "wcagLevel": "A",
+      "severity": "Moderate",
+      "page": "/before/contact",
+      "selector": "input[name=\"nameConfirm\"], input[name=\"phoneConfirm\"]",
+      "evidence": "The form re-asks for the name and phone number entered moments earlier (visible pseudo-labels: Confirm your name, Re-enter phone), with no autofill or carry-over.",
+      "source": "manual",
+      "recommendation": "Ask once; auto-populate or drop confirmation fields.",
+      "effort": "S"
+    }
+  ]
+}
