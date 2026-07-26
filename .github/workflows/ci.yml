@@ -30,7 +30,18 @@ jobs:
 
   # Accessibility gate: runs the repo-vendored axe scan (scripts/a11y-gate.mjs)
   # against the built app and FAILS on any WCAG 2.2 A/AA violation.
-  # /before/* routes are excluded by config — they are the intentionally
-  # inaccessible demonstration variant (see docs/SPEC.md).
-  # NOTE: job lands together with scripts/a11y-gate.mjs (A11Y-2); until that
-  # commit this job is absent rather than green-by-default.
+  # /before/* routes are excluded by config inside the gate script: they are
+  # the intentionally inaccessible demonstration variant (docs/SPEC.md,
+  # docs/seeded-violations.md).
+  a11y-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build
+      - run: node scripts/a11y-gate.mjs
