@@ -1,26 +1,132 @@
 @import "tailwindcss";
 
+/*
+ * Novagait design tokens (source of truth: /design-tokens.json).
+ * Every fg/bg pair here is AA-verified by tests/unit/tokens-contrast.test.ts.
+ * Theme model: light is default; dark applies via prefers-color-scheme unless
+ * the user forces a theme with the header toggle (data-theme on <html>).
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --bg: #ffffff;
+  --surface: #f8fafc;
+  --text: #0f172a;
+  --text-muted: #475569;
+  --primary: #4338ca;
+  --primary-hover: #3730a3;
+  --button-bg: #4338ca;
+  --button-bg-hover: #3730a3;
+  --on-primary: #ffffff;
+  --accent: #0f766e;
+  --error: #b91c1c;
+  --focus: #4338ca;
+  --border: #cbd5e1;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  :root:not([data-theme="light"]) {
+    --bg: #0b1220;
+    --surface: #1e293b;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --primary: #a5b4fc;
+    --primary-hover: #c7d2fe;
+    --button-bg: #4f46e5;
+    --button-bg-hover: #4338ca;
+    --on-primary: #ffffff;
+    --accent: #5eead4;
+    --error: #fca5a5;
+    --focus: #a5b4fc;
+    --border: #334155;
   }
 }
 
+:root[data-theme="dark"] {
+  --bg: #0b1220;
+  --surface: #1e293b;
+  --text: #f1f5f9;
+  --text-muted: #94a3b8;
+  --primary: #a5b4fc;
+  --primary-hover: #c7d2fe;
+  --button-bg: #4f46e5;
+  --button-bg-hover: #4338ca;
+  --on-primary: #ffffff;
+  --accent: #5eead4;
+  --error: #fca5a5;
+  --focus: #a5b4fc;
+  --border: #334155;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--text);
+  --color-fg-muted: var(--text-muted);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-button: var(--button-bg);
+  --color-button-hover: var(--button-bg-hover);
+  --color-on-primary: var(--on-primary);
+  --color-accent: var(--accent);
+  --color-error: var(--error);
+  --color-focus: var(--focus);
+  --color-border: var(--border);
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Visible, high-contrast focus everywhere; never removed without replacement. */
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Reduced motion: kill animation and smooth scrolling globally. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Skip link: hidden until focused. */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 100;
+  padding: 0.75rem 1.25rem;
+  background: var(--button-bg);
+  color: var(--on-primary);
+  border-radius: 0 0 0.5rem 0;
+}
+
+.skip-link:focus-visible {
+  left: 0;
 }
