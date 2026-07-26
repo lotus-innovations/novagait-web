@@ -30,6 +30,8 @@ export default function HomePage() {
             </div>
           </div>
           <GaitCycle className="mx-auto w-full max-w-md" />
+          {/* eslint-disable-next-line @next/next/no-img-element, jsx-a11y/alt-text */}
+          <img src="/before/provider-1.svg" className="h-10 w-16" />
         </div>
       </section>
 
