@@ -1,0 +1,32 @@
+/* V4 (seeded): focus indicators removed globally, no replacement.
+   This single rule is the reason keyboard users get lost on this variant. */
+.before-scope *:focus,
+.before-scope *:focus-visible {
+  outline: none;
+}
+
+/* V8 (seeded): carousel auto-advance runs unconditionally; there is no
+   prefers-reduced-motion gate anywhere in this file, and the global gate in
+   globals.css is deliberately overridden for the carousel track. */
+.before-scope .before-carousel-track {
+  animation: before-carousel-slide 9s linear infinite !important;
+  transition-duration: 0.6s !important;
+}
+
+@keyframes before-carousel-slide {
+  0%,
+  28% {
+    transform: translateX(0);
+  }
+  33%,
+  61% {
+    transform: translateX(-100%);
+  }
+  66%,
+  94% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
