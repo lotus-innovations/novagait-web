@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
@@ -24,6 +25,13 @@ export default function RootLayout({
       </head>
       <body className="flex min-h-screen flex-col antialiased">
         {children}
+        {/* AI concierge widget, served cross-origin by the concierge demo
+            (CORS-allowlisted there for this host). */}
+        <Script
+          src="https://concierge.lotusinnovations.io/widget.js"
+          strategy="afterInteractive"
+          data-ngc-auto="1"
+        />
         <Analytics />
       </body>
     </html>
