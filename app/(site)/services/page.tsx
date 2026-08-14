@@ -22,7 +22,7 @@ export default function ServicesPage() {
         <p className="mt-4 max-w-prose text-lg text-fg-muted">
           Every service below starts the same way: a thorough evaluation and a
           plan with a goal you chose. If we are not the right fit, we say so at
-          the first visit and point you to someone who is.
+          the first visit. We will point you to someone who is.
         </p>
       </Section>
       {services.map((s, i) => (
